@@ -10,17 +10,19 @@
 
   <body>
     <header>
-      <div class="header-logo">
-        <%= link_to('TweetApp','/') %>
-      </div>
-      <ul class="header-menus">
-        <li>
-          <%= link_to('TweetAppとは','/about') %>
-        </li>
-        <li>
-          <%= link_to('投稿一覧','/post/index') %>
-        </li>
-      </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <%= link_to('TweetApp','/', {class: "navbar-brand"}) %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <%= link_to('HOME','/', {class: "nav-link"}) %>
+            <%= link_to('TweetAppとは','/about', {class: "nav-link"}) %>
+            <%= link_to('投稿一覧','/post/index', {class: "nav-link"}) %>
+          </div>
+        </div>
+      </nav>
     </header>
     <%= yield %>
   </body>
