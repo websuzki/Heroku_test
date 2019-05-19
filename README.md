@@ -1,24 +1,15 @@
-# README
+# デプロイ練習@Heroku
+当時AWS上で開発を行っており、一度も本番環境を用意したことがなかったため、
+Heroku上でデプロイのテストをした。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+また、Gitも初めての仕様だったため、
 
-Things you may want to cover:
+同時にGitHub上にもソースをアップする方法を勉強した。
 
-* Ruby version
+# ソース内容
+ProgateのTweetAppという学習用のRailsWEBサービス
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+これのTOPページとAboutページのみの実装である。
+コードにはRailsをしようしているものの、
+データーベースをほぼ使っていない状態なので、
+見た目は静的なHPと変わらない
